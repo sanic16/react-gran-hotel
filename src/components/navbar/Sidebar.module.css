@@ -4,6 +4,7 @@
     background-color: hsl(0, 5%, 16%);
     position: fixed;
     padding-block: 2rem;
+    z-index: 1;
 }
 
 .sidebar{
@@ -27,7 +28,7 @@
 
 .line-1, .line-3{
     width: 1.8rem;
-    transition: var(--transition);
+    transition: all .3s;
 }
 
 .menu-icon:hover .line{
@@ -55,4 +56,18 @@
     color: var(--white-3);
     text-align: center;
     text-wrap: balance;
+}
+
+.navigation-toggle .line-1{
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 2.5rem;
+}
+
+.navigation-toggle .line-2{
+    opacity: 0;
+}
+
+.navigation-toggle .line-3{
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 2.5rem;
 }

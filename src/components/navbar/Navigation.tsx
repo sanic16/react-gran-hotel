@@ -2,9 +2,15 @@ import classes from './Navigation.module.css'
 import { FaSearch } from 'react-icons/fa'
 import { navigation_data } from '../../utils/data'
 
-const Navigation = () => {
+const Navigation = (
+    {
+        openSidebar
+    }:{
+        openSidebar: boolean
+    }
+) => {
   return (
-    <nav className={classes['navigation-wrapper']}>
+    <nav className={`${classes['navigation-wrapper']} ${openSidebar ? classes['navigation-toggle'] : undefined }`}>
         <div className={classes.navigation}>
             <div className={classes['navigation-header']}>
                 <h1 className={classes['navigation-heading']}>El Gran Hotel</h1>
