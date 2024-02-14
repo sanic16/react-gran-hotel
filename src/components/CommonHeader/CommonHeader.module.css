@@ -1,0 +1,26 @@
+.common-header{
+    margin-bottom: 5rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.common-heading{
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
+
+.small-underline{
+    width: 9rem;
+    height: .1rem;
+    margin: 0 auto 1rem auto;
+    background-color: var(--secondary-color);
+}
+
+.big-underline{
+    width: 20rem;
+    height: .1rem;
+    margin: 0 auto 2rem auto;
+    background-color: var(--secondary-color);
+}

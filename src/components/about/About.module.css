@@ -1,6 +1,7 @@
 .about-us{
     margin-left: 8rem;
     background-color: var(--black-2);
+    min-height: 100vh;
 }
 
 .about-us-wrapper{

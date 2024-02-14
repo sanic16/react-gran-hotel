@@ -7,7 +7,7 @@ import about_us_4 from '../../assets/about-us-img-4.jpeg'
 
 const About = () => {
   return (
-    <section className={classes['about-us']}>
+    <section className={classes['about-us']} id='about'>
         <div className={classes['about-us-wrapper']}>
             <div className={classes['about-us-content']}>
                 <h1 className={classes['about-us-heading']}>

@@ -61,7 +61,44 @@ const navigation_data = [
 
 ]
 
+import singleRoom from '../assets/single-room.jpeg'
+import doubleRoom from '../assets/double-room.jpeg'
+import lux from '../assets/lux.jpeg'
+import vip from '../assets/vip.jpeg'
+
+const rooms_data = [
+    {
+        id: 1,
+        image: singleRoom,
+        title: 'Habitación Individual',
+        description: 'Disfruta de una habitación individual con todas las comodidades.', 
+        price: 799.00
+    },
+    {
+        id: 2,
+        image: doubleRoom,
+        title: 'Habitación Doble',
+        description: 'Disfruta de una habitación doble con todas las comodidades.',
+        price: 999.00
+    },
+    {
+        id: 3,
+        image: lux,
+        title: 'Habitación Premium',
+        description: 'Disfruta de una habitación premium con todas las comodidades.',
+        price: 1499.00
+    },
+    {
+        id: 4,
+        image: vip,
+        title: 'Habitación VIP',
+        description: 'Disfruta de una habitación VIP con todas las comodidades.',
+        price: 1999.00
+    }
+]
+
 export { 
     social_data,
-    navigation_data
+    navigation_data,
+    rooms_data
 }

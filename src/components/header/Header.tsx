@@ -3,7 +3,7 @@ import { GiGuatemala } from 'react-icons/gi'
 
 const Header = () => {
   return (
-    <header className={classes.header}>
+    <header className={classes.header} id='home'>
 
         <div className={classes.brand}>
             <div>
