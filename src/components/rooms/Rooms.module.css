@@ -1,0 +1,121 @@
+.rooms{
+    background-color: var(--white-3);
+    margin-left: 8rem;
+}
+
+.common-header{
+    padding: 0 5rem 5rem 5rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.common-heading{
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
+
+.small-underline{
+    width: 9rem;
+    height: .1rem;
+    margin: 0 auto 1rem auto;
+    background-color: var(--secondary-color);
+}
+
+.big-underline{
+    width: 20rem;
+    height: .1rem;
+    margin: 0 auto 2rem auto;
+    background-color: var(--secondary-color);
+}
+
+.rooms-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room-card{
+    width: 60rem;
+    margin: 5rem;
+    background-color: var(--black-1);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .7);
+}
+
+.room-img{
+    width: 100%;
+}
+
+.room-card-content{
+    color: var(--white-2);
+    padding: 2rem;
+}
+
+.room-card-heading{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.room-card-paragraph{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--white-4);
+    height: 3.6rem;
+    margin: 1rem 0 2rem 0;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.room-price{
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+.room-card-btn{
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: .1rem solid var(--secondary-color);
+    border-radius: 10rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.rooms-btn-wrapper{
+    text-align: center;
+}
+
+.rooms-btn{
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    margin: 4rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    border: .2rem solid var(--secondary-color);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+}
+
+.rooms-btn:hover{
+    color: var(--white-3);
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1300px){
+    .room-card{
+        width: 50rem;
+    }
+}

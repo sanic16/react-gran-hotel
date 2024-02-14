@@ -1,0 +1,91 @@
+.header{
+    margin-left: 8rem;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../../assets/header-1.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.brand{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.brand svg{
+    font-size: 7.5rem;
+    color: var(--primary-nav);
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.hotel-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: var(--primary-nav);
+    letter-spacing: .2rem;
+}
+
+.banner{
+    color: var(--white-4);
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* background-color: red; */
+}
+
+.banner-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 7rem;
+    font-weight: 400;
+    animation: anim 2s ;
+}
+
+.banner-paragraph{
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s backwards;
+}
+
+.banner-button{
+    width: 21rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    color: var(--white-6);
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    background: linear-gradient(to right, gold, goldenrod);
+    cursor: pointer;
+    animation: anim 1s 1s backwards;
+}
+
+.banner-button:hover{
+    background: linear-gradient(to left, gold, goldenrod);
+}
+
+.banner-button:active{
+    transform: translateY(.2rem);
+}
+
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .banner{
+        height: 55rem;
+        /* background-color: blue; */
+    }
+}
