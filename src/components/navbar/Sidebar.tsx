@@ -1,6 +1,7 @@
 import { social_data } from "../../utils/data"
 import classes from './Sidebar.module.css'
 
+
 const Sidebar = (
     {
         handleToggleSidebar,
