@@ -55,7 +55,7 @@ section{
 
 /* card */
 .card{
-  background-color: var(--black-3);
+  background-color: var(--white-3);
   border: 2px solid transparent;
   text-align: center;
   padding: 3rem 2rem;
@@ -65,7 +65,13 @@ section{
 
 .card:hover{
   background-color: transparent;
-  border-color: var(--black-2);
+  border-color: var(--white-3);
   cursor: default;
+}
+
+.card small{
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
 }
 

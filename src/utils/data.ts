@@ -45,17 +45,17 @@ const navigation_data = [
     },
     {
         id: 4,
-        text: "Events",
+        text: "Eventos",
         url: "#events"
     },
     {
         id: 5,
-        text: "Customers",
+        text: "Clientes",
         url: "#customers"
     },
     {
         id: 6,
-        text: "Contact",
+        text: "Contacto",
         url: "#contact"
     }
 
@@ -97,8 +97,29 @@ const rooms_data = [
     }
 ]
 
+import client1 from '../assets/customer-1.jpeg'
+import client2 from '../assets/customer-2.jpeg'
+
+const customers = [
+    {
+        id: 1,
+        name: 'María Gonzales',
+        quote: 'Es un lugar agradable, me encanta la comida y el ambiente! El personal es muy amable y siempre está dispuesto a ayudar.',
+        job: 'Cliente',
+        avatar: client1
+    },
+    {
+        id: 2,
+        name: 'Carlos Pérez',
+        quote: 'El mejor lugar para descansar y disfrutar de la naturaleza. La comida es deliciosa y el personal es muy amable.',
+        job: 'Turista Extranjero',
+        avatar: client2
+    }
+]
+
 export { 
     social_data,
     navigation_data,
-    rooms_data
+    rooms_data,
+    customers
 }
