@@ -117,9 +117,94 @@ const customers = [
     }
 ]
 
+const footer_contact = [
+    {
+        id: 1,
+        data: 'elgranhotel@email.com'
+    },
+    {
+        id: 2,
+        data: 'San Miguel Petapa, Guatemala'
+    },
+    {
+        id: 3,
+        data: '+502 5555-5555'
+    }
+]
+
+const footer_navigation = [
+    {
+        id: 1,
+        text: 'Inicio',
+        url: '#home'
+    },
+    {
+        id: 2,
+        text: 'Acerca',
+        url: '#about'
+    },
+    {
+        id: 3,
+        text: 'Habitaciones',
+        url: '#rooms'
+    },
+    {
+        id: 4,
+        text: 'Eventos',
+        url: '#events'
+    },
+    {
+        id: 5,
+        text: 'Clientes',
+        url: '#customers'
+    },
+    {
+        id: 6,
+        text: 'Contacto',
+        url: '#contact'
+    }
+]
+
+import gallery_image_1 from '../assets/gallery-img-1.jpeg'
+import gallery_image_2 from '../assets/gallery-img-2.jpeg'
+import gallery_image_3 from '../assets/gallery-img-3.jpeg'
+import gallery_image_4 from '../assets/gallery-img-4.jpeg'
+import gallery_image_5 from '../assets/gallery-img-5.jpeg'
+import gallery_image_6 from '../assets/gallery-img-6.jpeg'
+
+const footer_images = [
+    {
+        id: 1,
+        image: gallery_image_1
+    },
+    {
+        id: 2,
+        image: gallery_image_2
+    },
+    {
+        id: 3,
+        image: gallery_image_3
+    },
+    {
+        id: 4,
+        image: gallery_image_4
+    },
+    {
+        id: 5,
+        image: gallery_image_5
+    },
+    {
+        id: 6,
+        image: gallery_image_6
+    }
+]
+
 export { 
     social_data,
     navigation_data,
     rooms_data,
-    customers
+    customers,
+    footer_contact,
+    footer_navigation,
+    footer_images
 }
