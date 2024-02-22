@@ -4,7 +4,7 @@ import { footer_contact, footer_images, footer_navigation } from '../../utils/da
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>
+    <footer className={classes.footer} id='contact'>
         <div className={classes['main-part']}>
 
             <div className={classes['footer-list-wrapper']}>
@@ -23,6 +23,7 @@ const Footer = () => {
                     }
                 </ul>
             </div>
+
             <div className={classes['footer-list-wrapper']}>
                 <h3 className={classes['footer-heading']}>
                     Explorar
@@ -72,20 +73,21 @@ const Footer = () => {
 
             
         </div>
-        <div className={classes['creator-part']}>
-                <div className={classes['copyright-text']}>
-                    <p>
-                        &copy; { new Date().getUTCFullYear() } El Gran Hotel. Todos los derechos reservados. 
-                    </p>
-                </div>
-                <div className={classes['text-right']}>
-                    <p>
-                        Creado por: <i><a href='https://juliosanic.'>
-                            Julio Sanic
-                        </a>
-                        </i>
-                    </p>
-                </div>
+        
+        <div className={classes['creator-part']} >
+            <div className={classes['copyright-text']}>
+                <p>
+                    &copy; { new Date().getUTCFullYear() } El Gran Hotel. Todos los derechos reservados. 
+                </p>
+            </div>
+            <div className={classes['text-right']}>
+                <p>
+                    Creado por: <i><a href='https://juliosanic.'>
+                        Julio Sanic
+                    </a>
+                    </i>
+                </p>
+            </div>
         </div>
     </footer>
   )

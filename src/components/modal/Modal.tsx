@@ -1,18 +1,18 @@
-import useModalContext from "../../context/modal-context"
 import ReactDOM from 'react-dom'
 import './modal.css'
+import useMenuContext from '../../context/menu-context'
 
 const Modal = () => {
   
-  const { isModalOpen, closeModal } = useModalContext()  
+  const { isMenuOpen, closeMenuHandler } = useMenuContext()
     
   return (
     <>
-        { isModalOpen && (
+        { isMenuOpen && (
             ReactDOM.createPortal(
                 <>
                     <div 
-                        onClick={closeModal}
+                        onClick={closeMenuHandler}
                         className="backdrop"
                     >
 

@@ -3,17 +3,16 @@
     position: fixed;
     width: 40rem;
     height: 100%;
-    padding: 2rem;
+    padding-block: 3rem;
     background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)), url('../../assets/nav-bg.jpeg') center no-repeat;
     background-size: cover;
     transition: left .5s cubic-bezier(1, 0, 0, 1);
-    z-index: 10;
+    z-index: 6;
 }
 
 .navigation-toggle{
     left: 8rem;
 }
-
 
 .navigation{
     height: 100%;
@@ -134,4 +133,115 @@
 
 .copyright span{
     color: var(--primary-nav);
+}
+
+@media screen and (max-width: 650px){
+    .navigation-heading{
+        font-size: 3rem;
+    }
+    .navigation-search-input{
+        width: 25rem;
+        font-size: 1.4rem;
+    }
+    .navigation-search-btn{
+        font-size: 1.5rem;
+    }
+    .navigation-link{
+        font-size: 1.4rem;
+    }
+    .navigation-wrapper{
+        width: 35rem;
+    }
+    .copyright{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    .navigation-wrapper{
+        width: 30rem;
+    }
+} 
+
+@media screen and (max-width: 500px){
+    .navigation-heading{
+        font-size: 2.5rem;
+    }
+    .navigation-search-input{
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+    .navigation-search-btn{
+        font-size: 1.3rem;
+    }
+    .navigation-list{
+        height: 25rem;
+    }
+
+    .navigation-link{
+        font-size: 1.2rem;
+    }
+    .navigation-wrapper{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-height: 400px){
+    
+    .navigation-heading{
+        font-size: 2.2rem;
+    }
+    .navigation-search-input{
+        width: 22rem;
+        font-size: 1.2rem;
+        padding: .8rem 1.6rem;
+    }
+    .navigation-search-btn{
+        font-size: 1.3rem;
+    }
+    .navigation-list{
+        height: 18rem;
+    }
+    .navigation-link{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-height: 500px){
+    .navigation-list{
+        height: 20rem;
+    }
+    .navigation-link{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-height: 350px){
+    .navigation-wrapper{
+        padding: 1rem;
+    }
+    .navigation-heading{
+        font-size: 2rem;
+    }
+    .navigation-search-input{
+        width: 22rem;
+        font-size: 1rem;
+        padding: .8rem 1.6rem;
+    }
+    .navigation-search-btn{
+        font-size: 1.2rem;
+    }
+    .navigation-list{
+        height: 15rem;
+    }
+    .navigation-link{
+        font-size: 1rem;
+    }
+    .copyright{
+        font-size: .8rem;
+    }
 }

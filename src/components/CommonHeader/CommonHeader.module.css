@@ -24,3 +24,16 @@
     margin: 0 auto 2rem auto;
     background-color: var(--secondary-color);
 }
+
+@media screen and (max-width: 500px){
+    .common-heading{
+        font-size: 2rem;
+        text-wrap: balance;
+    }
+    .small-underline{
+        width: 5rem;
+    }
+    .big-underline{
+        width: 12rem;
+    }
+}

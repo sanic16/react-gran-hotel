@@ -2,18 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-  --transition: .3s ease-in-out;
   --white-1: hsl(0, 5%, 100%);
   --white-2: hsl(0, 5%, 92%);
   --white-3: hsl(0, 5%, 82%);
   --white-4: hsl(0, 5%, 72%);
   --white-5: hsl(0, 5%, 50%);
   --white-6: hsl(0, 5%, 38%);
+  --black-0: hsl(0, 5%, 4%);
   --black-1: hsl(0, 5%, 12%);
   --black-2: hsl(0, 5%, 20%); 
   --black-3: hsl(0, 5%, 28%);
   --primary-nav: hsla(35, 88%, 42%, .8);
   --secondary-color: hsla(15, 88%, 42%);
+  --transition: .3s ease;
+
 
   --width-container-lg: 85%;
   --width-container-sm: 95%;
@@ -64,9 +66,7 @@ section{
 }
 
 .card:hover{
-  background-color: transparent;
-  border-color: var(--white-3);
-  cursor: default;
+   cursor: default;
 }
 
 .card small{

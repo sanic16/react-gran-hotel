@@ -3,13 +3,13 @@ import Customers from "../components/customers/Customers"
 import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 import Modal from "../components/modal/Modal"
-import Navbar from "../components/navbar/Navbar"
+import Sidebar from "../components/navbar/Sidebar"
 import Rooms from "../components/rooms/Rooms"
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Sidebar />
       <Header />
       <About />
       <Rooms />

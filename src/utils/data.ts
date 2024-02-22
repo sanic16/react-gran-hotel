@@ -35,7 +35,7 @@ const navigation_data = [
     },
     {
         id: 2,
-        text: "Acerca",
+        text: "Nosotros",
         url: "#about"
     },
     {
@@ -140,7 +140,7 @@ const footer_navigation = [
     },
     {
         id: 2,
-        text: 'Acerca',
+        text: 'Nosotros',
         url: '#about'
     },
     {

@@ -9,13 +9,6 @@
     color: var(--secondary-color);
 }
 
-.common-heading{
-    font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: .2rem;
-    margin-bottom: 2rem;
-}
-
 .small-underline{
     width: 9rem;
     height: .1rem;
@@ -119,3 +112,90 @@
         width: 50rem;
     }
 }
+
+@media screen and (max-width: 1200px){
+    .room-card{
+        width: 40rem;
+    }
+    .room-card-heading{
+        font-size: 2.5rem;
+    }
+    .room-card-paragraph{
+        font-size: 1.3rem;
+    }
+    .room-price{
+        font-size: 3.5rem;
+    }
+    .room-card-btn{
+        width: 15rem;
+        padding: 1.3rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .room-card{
+        width: 30rem;
+    }
+    .room-card-heading{
+        font-size: 2rem;
+    }
+    .room-card-paragraph{
+        font-size: 1.2rem;
+    }
+    .room-price{
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .room-card{
+        width: 40rem;
+    }
+    .room-card-heading{
+        font-size: 2.5rem;
+    }
+    .room-card-paragraph{
+        height: auto;
+        overflow: visible;
+        font-size: 1.3rem;
+    }
+    .room-price{
+        font-size: 3.5rem;
+    }
+} 
+
+
+@media screen and (max-width: 600px){
+    .room-card{
+        width: 30rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .room-card{
+        width: 25rem;
+    }
+    .room-price{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .room-card-heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .room-card-paragraph{
+        
+        margin: 1rem 0 1rem 0;
+    }
+    .room-card-btn{
+        width: 15rem;
+        padding: 1rem 1rem;
+        font-size: .9rem;
+        gap: .5rem;
+    }
+}
+
+

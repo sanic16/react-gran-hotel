@@ -1,21 +1,17 @@
+import useMenuContext from "../../context/menu-context"
 import { social_data } from "../../utils/data"
+import Navigation from "./Navigation"
 import classes from './Sidebar.module.css'
 
 
-const Sidebar = (
-    {
-        handleToggleSidebar,
-        openSidebar,
-    }:{
-        handleToggleSidebar: () => void
-        openSidebar: boolean
-    }
-) => {
+const Sidebar = () => {
+  const { isMenuOpen, toggleMenuHandler } = useMenuContext()  
   return (
-    <div className={classes['sidebar-wrapper']}>
+    
+    <nav>
         <div className={classes.sidebar}>
 
-            <div className={`${classes['menu-icon']} ${openSidebar ? classes['navigation-toggle'] : undefined}`} onClick={handleToggleSidebar}>
+            <div className={`${classes['menu-icon']} ${isMenuOpen ? classes['navigation-toggle'] : undefined}`} onClick={toggleMenuHandler}>
                 <div className={`${classes['line']} ${classes['line-1']}`}></div>
                 <div className={`${classes['line']} ${classes['line-2']}`}></div>
                 <div className={`${classes['line']} ${classes['line-3']}`}></div>
@@ -35,13 +31,17 @@ const Sidebar = (
                     ))
                 }
             </ul>
+
             <div className={classes['year']}>
                 <p>
-                    &copy; { new Date().getFullYear() } <span>El Gran Hotel</span>
+                    { new Date().getFullYear() } 
                 </p>
             </div>
+
+            
         </div>
-    </div>
+        <Navigation />
+    </nav>
   )
 }
 

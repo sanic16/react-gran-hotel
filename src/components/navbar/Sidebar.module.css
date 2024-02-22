@@ -1,18 +1,16 @@
-.sidebar-wrapper{
+.sidebar{
     width: 8rem;
     height: 100%;
-    background-color: hsl(0, 5%, 16%);
+    background-color: var(--black-1);
     position: fixed;
-    padding-block: 2rem;
-    z-index: 100;
-}
-
-.sidebar{
-    height: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .menu-icon{
@@ -28,7 +26,7 @@
 
 .line-1, .line-3{
     width: 1.8rem;
-    transition: all .3s;
+    transition: all .4s ease;
 }
 
 .menu-icon:hover .line{
@@ -56,6 +54,7 @@
     color: var(--white-3);
     text-align: center;
     text-wrap: balance;
+    font-size: 1.2rem;
 }
 
 .navigation-toggle .line-1{
@@ -70,4 +69,44 @@
 .navigation-toggle .line-3{
     transform: rotate(405deg) translate(-5px, -6px);
     width: 2.5rem;
+}
+
+@media screen and (max-width: 1300px){
+    .social-link{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .social-icons-list{
+        height: 20rem;
+    }
+    .social-link{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-height: 400px){
+    .social-icons-list{
+        height: 20rem;
+    }
+    .social-link{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-height: 300px){
+    .sidebar{
+        padding-block: 1rem;
+    }
+    .social-icons-list{
+        height: 15rem;
+    }
+    .social-link{
+        font-size: 1.2rem;
+    }
+    .year{
+        font-size: .8rem;
+    }
 }

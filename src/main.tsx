@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { ModalContextProvider } from './context/modal-context.tsx'
+import { MenuContextProvider } from './context/menu-context.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ModalContextProvider>
+    <MenuContextProvider>
       <App />
-    </ModalContextProvider>
+    </MenuContextProvider>
   </React.StrictMode>,
 )

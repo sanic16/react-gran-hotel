@@ -44,12 +44,17 @@
     font-size: 7rem;
     font-weight: 400;
     animation: anim 2s ;
+    text-align: center;
+
 }
 
 .banner-paragraph{
     font-size: 3.5rem;
     font-weight: 300;
     animation: anim 1.5s .5s backwards;
+    text-wrap: balance;
+    text-align: center;
+    /* margin-inline: 2rem; */
 }
 
 .banner-button{
@@ -83,9 +88,127 @@
     }
 }
 
+
 @media screen and (max-width: 1300px){
     .banner{
         height: 55rem;
-        /* background-color: blue; */
+        gap: 1.8rem;
+    }
+    .hotel-heading{
+        font-size: 2.5rem;
+    }
+    .banner-heading{
+        font-size: 6rem;
+    }
+    .banner-paragraph{
+        font-size: 3rem;
+    }
+    .banner-button{
+        width: 18rem;
+        padding: 1.1rem 1.8rem;
+        font-size: 1.8rem;
     }
 }
+
+@media screen and (max-width: 1000px){
+    
+    .banner-heading{
+        font-size: 5rem;
+    }
+    .banner-paragraph{
+        font-size: 2.5rem;
+    }
+    .banner-button{
+        width: 16rem;
+        padding: 1rem 1.6rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .banner-heading{
+        font-size: 4rem;
+    }
+    .banner-paragraph{
+        font-size: 2rem;
+    }
+    .banner-button{
+        width: 14rem;
+        padding: .9rem 1.4rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .banner-heading{
+        font-size: 3.5rem;
+    }
+    .banner-paragraph{
+        font-size: 1.8rem;
+    }
+    .banner-button{
+        width: 12rem;
+        padding: .8rem 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .banner-heading{
+        font-size: 3rem;
+    }
+    .banner-paragraph{
+        font-size: 1.5rem;
+    }
+    .banner-button{
+        width: 12rem;
+        padding: .7rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 900px){
+    .banner{
+        height: 70rem;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .banner{
+        height: 60rem;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .banner{
+        height: 55rem;
+    }
+}
+
+@media screen and (max-height: 600px){
+    .banner{
+        height: 50rem;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .banner{
+        height: 45rem;
+    }
+}
+
+@media screen and (max-height: 400px){
+    .banner{
+        height: calc(100vh - 88px);
+    }
+}
+
+@media screen and (max-height: 300px){
+    .banner{
+        height: calc(100vh - 88px);
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+}
+
+

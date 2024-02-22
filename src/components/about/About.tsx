@@ -7,8 +7,8 @@ import about_us_4 from '../../assets/about-us-img-4.jpeg'
 
 const About = () => {
   return (
-    <section className={classes['about-us']} id='about'>
-        <div className={classes['about-us-wrapper']}>
+    <section className={classes['about-us-wrapper']} id='about'>
+        <div className={classes['about-us']}>
             <div className={classes['about-us-content']}>
                 <h1 className={classes['about-us-heading']}>
                     Acerca de Nosotros
@@ -18,7 +18,7 @@ const About = () => {
                     <div className={classes['big-underline']}></div>
                 </div>
                 <h3 className={classes['sub-heading']}>
-                    Hotel El Jaguar Dorado
+                    El Gran Hotel
                 </h3>
                 <p className={classes['about-us-paragraph']}>
                     Somos un hotel con una larga trayectoria en el sector turístico. 
